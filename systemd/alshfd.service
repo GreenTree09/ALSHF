@@ -1,0 +1,11 @@
+[Unit]
+Description=ALSHF Daemon Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/alshfd
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

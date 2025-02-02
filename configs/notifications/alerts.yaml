@@ -1,0 +1,7 @@
+notifications:
+  email:
+    - "admin@example.com"
+  slack:
+    - "#alerts"
+  telegram:
+    - "@alerts_channel"
