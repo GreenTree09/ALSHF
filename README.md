@@ -1,5 +1,5 @@
 # ALSHF
-# (Automated Linux Security Hardening Framework)
+## (Automated Linux Security Hardening Framework)
 
 ![License](https://img.shields.io/github/license/GreenTree09/ALSHF)
 ![Go Version](https://img.shields.io/github/go-mod/go-version/GreenTree09/ALSHF)
@@ -129,7 +129,7 @@ For security issues, please read our [Security Policy](SECURITY.md) and report a
 
 ## 📊 Project Status
 
-Current Version: 0.1.0 (Development)
+Current Version: 0.1.0 (Development)  
 Last Updated: 2025-01-20 22:54:10 UTC
 
 This project is under active development. Features are being added regularly, and the API might change until version 1.0.0.
@@ -140,4 +140,3 @@ Project Link: [https://github.com/GreenTree09/ALSHF](https://github.com/GreenTre
 
 ---
 Created with ❤️ by GreenTree09
-```
