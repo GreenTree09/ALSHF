@@ -1,8 +1,9 @@
 package hardening
 
 import (
-	"io/ioutil"
+	"os"
 	"os/exec"
+
 	"gopkg.in/yaml.v2"
 )
 
@@ -13,7 +14,7 @@ type FirewallConfig struct {
 }
 
 func SetupFirewall(configPath string) error {
-	data, err := ioutil.ReadFile(configPath)
+	data, err := os.ReadFile(configPath)
 	if err != nil {
 		return err
 	}

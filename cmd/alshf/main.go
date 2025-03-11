@@ -38,4 +38,6 @@ func main() {
 		log.Fatalf("Error setting up Tripwire: %v", err)
 		os.Exit(1) // Exit the program on error
 	}
+
+	fmt.Println("done")
 }

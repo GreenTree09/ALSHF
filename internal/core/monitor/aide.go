@@ -1,8 +1,9 @@
 package monitor
 
 import (
-	"io/ioutil"
+	"os"
 	"os/exec"
+
 	"gopkg.in/yaml.v2"
 )
 
@@ -12,7 +13,7 @@ type AIDEConfig struct {
 }
 
 func SetupAIDE(configPath string) error {
-	data, err := ioutil.ReadFile(configPath)
+	data, err := os.ReadFile(configPath)
 	if err != nil {
 		return err
 	}

@@ -1,8 +1,9 @@
 package hardening
 
 import (
+	"os"
 	"os/exec"
-	"io/ioutil"
+
 	"gopkg.in/yaml.v2"
 )
 
@@ -12,7 +13,7 @@ type SELinuxConfig struct {
 }
 
 func ConfigureSELinux(configPath string) error {
-	data, err := ioutil.ReadFile(configPath)
+	data, err := os.ReadFile(configPath)
 	if err != nil {
 		return err
 	}
