@@ -2,7 +2,7 @@ package hardening
 
 import (
 	"os/exec"
-
+	"io/ioutil"
 	"gopkg.in/yaml.v2"
 )
 
