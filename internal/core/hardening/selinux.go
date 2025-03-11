@@ -12,7 +12,7 @@ type SELinuxConfig struct {
 }
 
 func ConfigureSELinux(configPath string) error {
-	data, err := io.ReadFile(configPath)
+	data, err := ioutil.ReadFile(configPath)
 	if err != nil {
 		return err
 	}
