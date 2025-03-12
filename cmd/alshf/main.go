@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	
+	"ALSHF/internal/core/hardening"
+	"ALSHF/internal/core/monitor"
 	"log"
 	"os"
 )
