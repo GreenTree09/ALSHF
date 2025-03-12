@@ -9,8 +9,12 @@ GOINSTALL = $(GO) install
 # Define project binary name
 BINARY_NAME = alshf
 
+# Initialize go.mod file
+init:
+	$(GO) mod init github.com/GreenTree09/ALSHF
+
 # Install dependencies
-deps:
+deps: init
 	$(GO) mod tidy
 
 # Build the project
@@ -33,4 +37,4 @@ run: build
 clean:
 	rm -f $(BINARY_NAME)
 
-.PHONY: deps build install test run clean
+.PHONY: init deps build install test run clean
