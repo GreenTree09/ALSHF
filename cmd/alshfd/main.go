@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"internal/core/hardening"
-	"internal/core/monitor"
+	"./internal/core/hardening"
+	"./internal/core/monitor"
 	"log"
 	"net/http"
 	"os"
