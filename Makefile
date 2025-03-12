@@ -11,26 +11,26 @@ BINARY_NAME = alshf
 
 # Install dependencies
 deps:
-    $(GO) mod tidy
+	$(GO) mod tidy
 
 # Build the project
 build: deps
-    $(GOBUILD) -o $(BINARY_NAME) cmd/alshf/main.go
+	$(GOBUILD) -o $(BINARY_NAME) cmd/alshf/main.go
 
 # Install the project binary
 install: build
-    $(GOINSTALL)
+	$(GOINSTALL)
 
 # Run tests (if you have any)
 test:
-    $(GOTEST) ./...
+	$(GOTEST) ./...
 
 # Run the application (start the service)
 run: build
-    ./$(BINARY_NAME)
+	./$(BINARY_NAME)
 
 # Clean generated binaries
 clean:
-    rm -f $(BINARY_NAME)
+	rm -f $(BINARY_NAME)
 
 .PHONY: deps build install test run clean
