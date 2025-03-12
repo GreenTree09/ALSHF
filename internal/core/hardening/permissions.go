@@ -49,4 +49,3 @@ func (u *User) RemovePermission(permissionName string) error {
     }
     return errors.New("permission not found")
 }
-Explanation:
