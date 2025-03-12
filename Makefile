@@ -11,7 +11,7 @@ BINARY_NAME = alshf
 
 # Initialize go.mod file
 init:
-	$(GO) mod init github.com/GreenTree09/ALSHF
+	$(GO) mod init ALSHF
 
 # Install dependencies
 deps: init
@@ -19,7 +19,7 @@ deps: init
 
 # Build the project
 build: deps
-	$(GOBUILD) -o $(BINARY_NAME) cmd/alshf/main.go
+	$(GOBUILD) -o $(BINARY_NAME) ./cmd/alshf/main.go
 
 # Install the project binary
 install: build
